@@ -210,9 +210,9 @@ function issueWarning(thePlayer, commandName, target, ...)
 
 						exports.blackhawk:setElementDataEx(targetPlayer, "account:warns", newWarnAmount, true)
 						exports.logs:addLog(thePlayer, 16, affectedElements, "Issued a warning to " .. targetAccountName .. " for the following reason: " .. theReason)
-
 						exports.global:sendMessage("[WARNING] " .. thePlayerName .. " has issued a warning to " .. targetPlayerName .. " (" .. targetPlayerName .. ").", 255, 0, 0, "punish")
 						exports.global:sendMessage("[WARNING] Reason: " .. theReason, 255, 0, 0, "punish")
+						triggerEvent("admin:sendhistory",root,"warn",thePlayer,targetPlayer,theReason)
 
 						if (newWarnAmount % 3 == 0) then
 							-- Issue a point every 3 warnings.

@@ -17,7 +17,7 @@ ______ _____ _      ___________ _       _____   __
 Copyright of the Emerald Gaming Development Team, do not distribute - All rights reserved. ]]
 
 function c_checkPlayer(commandName, targetPlayer)
-	triggerServerEvent("admin:s_checkPlayer", localPlayer, localPlayer, commandName, targetPlayer)
+	triggerServerEvent("", localPlayer, localPlayer, commandName, targetPlayer)
 end
 addCommandHandler("check", c_checkPlayer)
 -- NOTE: This  command handler is located clientside since "check" is a default MTA server-sided command.

@@ -27,8 +27,7 @@ addEvent("pmSoundFX", true)
 addEventHandler("pmSoundFX", getRootElement(), playPmSound)
 
 function clearChat()
-	local lines = getChatboxLayout()["chat_lines"] * 2
-	for i=1, lines do outputChatBox("") end
+	clearChatBox()
 end
 addCommandHandler("clearchat", clearChat)
 addCommandHandler("cl", clearChat)

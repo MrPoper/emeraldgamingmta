@@ -22,6 +22,9 @@
 
     <script src="c_recon.lua" type="client" />
 
+
+    <script src="s_history.lua" type="server" />
+
     <script src="c_wallview.lua" type="client" />
     <file src="fx/ped_wall.fx" type="client" />
     <file src="fx/ped_wall_mrt.fx" type="client" />
@@ -30,5 +33,5 @@
     <file src="sounds/nudgeSound.mp3" />
     <file src="sounds/announcementSound.mp3" />
 
-    <min_mta_version server="1.5.5-9.14060" client="1.5.5-9.14060" />
+    <!-- <min_mta_version server="1.5.5-9.14060" client="1.5.5-9.14060" /> -->
 </meta>
